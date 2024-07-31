@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a2e; /* Dark background for consistency */
+}
+#backButton {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f3460;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#backButton:hover {
+    background-color: #e94560;
+    color: white;
+    transform: scale(1.05);
+}
+
+.container {
+    background-color: #16213e; /* Darker background for the container */
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vh; /* Adjusted width to be more responsive */
+    max-width: 500px; /* Maximum width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container h2,p{
+    color: #f9f9f9;
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select, button, input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input {
+    border: 1px solid #333; /* Dark border color for input fields */
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    background-color: #ffffff; /* Light background for input fields */
+    color: #090909; /* Dark text color for readability */
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.select-container img {
+    max-width: 2rem;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #333333; /* Dark border color */
+}
+
+.select-container select {
+    font-size: 1rem;
+    width: auto;   
+}
+
+.msg {
+    margin: 2rem 0;
+    color: #f0f0f0; /* Light color for message text */
+    font-size: 1.2rem;
+}
+
+form button {
+    height: 3rem;
+    background-color: #0056b3; /* Primary button color */
+    font-size: 1.15rem;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #003d7a; /* Darker button color on hover */
+    transform: scale(1.05);
+}
